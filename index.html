@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saurav Yadav | Data Science and Machine Learning</title>
+  <meta name="description" content="Saurav Yadav is a Data Science student at Nalanda University who builds machine learning systems from raw data to deployed apps.">
+  <meta name="theme-color" content="#F2F0FB">
+  <meta property="og:title" content="Saurav Yadav | Data Science and Machine Learning">
+  <meta property="og:description" content="Machine learning projects, internships and experiments by Saurav Yadav.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233B38F0'/%3E%3Cpath d='M14 44c8-24 16-24 24-8s8 8 12-12' fill='none' stroke='%23FFD24A' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="nav">
+    <a class="nav-logo" href="#top" aria-label="Saurav Yadav, back to top">SY</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="landscape" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="hero-status"><span class="pulse"></span>Open to ML engineer and data science internships</p>
+        <h1 class="hero-name" aria-label="Saurav Yadav">
+          <span class="line" aria-hidden="true">Saurav</span>
+          <span class="line" aria-hidden="true">Yadav</span>
+        </h1>
+        <p class="hero-lede">I build machine learning systems from raw data to a deployed app, and I like understanding every step in between.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <p class="hero-hint" aria-hidden="true">Move your cursor across the landscape</p>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python</span><span>SQL</span><span>scikit-learn</span><span>XGBoost</span><span>Prophet</span><span>Flask</span><span>Docker</span><span>GitHub Actions</span><span>AWS</span><span>React Native</span><span>Next.js</span><span>Claude Code</span>
+        <span>Python</span><span>SQL</span><span>scikit-learn</span><span>XGBoost</span><span>Prophet</span><span>Flask</span><span>Docker</span><span>GitHub Actions</span><span>AWS</span><span>React Native</span><span>Next.js</span><span>Claude Code</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <h2 class="section-title">A student who ships.</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm Saurav, a B.Sc. (Hons) Data Science student at the Nalanda University Centre in Rajasthan, graduating in 2027. I got into data science because I like the moment a messy spreadsheet turns into something that can predict, plan or decide.</p>
+          <p>Most of my learning happens by building. I've forecast sales for a large electricals company, designed a two-stage loan decision system, wrapped a model in a Dockerised web app with a CI/CD pipeline, and worked on voice and mobile products that real sales teams use.</p>
+          <p>Right now I'm looking for an ML engineer or data science internship where I can work on production problems. I'm also open to product, business analyst and customer success roles, because I enjoy the part where a model meets a person.</p>
+        </div>
+        <aside class="about-card">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Studying</dt><dd>B.Sc. (Hons) Data Science, 2023 to 2027</dd></div>
+            <div><dt>Where</dt><dd>Nalanda University Centre, Rajasthan</dd></div>
+            <div><dt>Working now</dt><dd>Data Science Intern at Havells India, Noida</dd></div>
+            <div><dt>Looking for</dt><dd>ML engineer and data science internships</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <h2 class="section-title">Things I've built.</h2>
+      <p class="section-sub">Select a project to read how it works.</p>
+
+      <ul class="project-list" id="project-list">
+        <li class="project">
+          <button class="project-head" aria-expanded="false" aria-controls="p1">
+            <span class="project-name">Drinks Quality Prediction System</span>
+            <span class="project-kind">MLOps</span>
+            <span class="project-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" id="p1" role="region">
+            <div class="project-inner">
+              <p>A complete machine learning service rather than a notebook. A five-stage training pipeline (data ingestion, validation, transformation, model training and evaluation) is driven by config files, so changing a parameter never means changing code.</p>
+              <p>The model is an ElasticNet regression trained on 1,599 red wine samples with 11 chemical features to predict quality. A Flask app exposes training and prediction, the whole thing is containerised with Docker, and GitHub Actions deploys it through AWS ECR to an EC2 runner.</p>
+              <ul class="tags"><li>Python</li><li>ElasticNet</li><li>Flask</li><li>Docker</li><li>GitHub Actions</li><li>AWS ECR and EC2</li></ul>
+              <a class="project-link" href="https://github.com/sauravyadav7721/Drinks-Quality-Prediction-System" target="_blank" rel="noopener">View the code on GitHub</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="project">
+          <button class="project-head" aria-expanded="false" aria-controls="p2">
+            <span class="project-name">Two-Stage Loan Approval and Valuation</span>
+            <span class="project-kind">Machine learning</span>
+            <span class="project-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" id="p2" role="region">
+            <div class="project-inner">
+              <p>Most loan models stop at yes or no. This system answers two questions in order: first, should this application be approved, and second, if so, how much should the loan be worth.</p>
+              <p>Splitting the problem lets each model specialise, and keeps the amount estimate from being polluted by applications that were never going to be approved. Next steps are deploying it on GCP and training on a larger dataset.</p>
+              <ul class="tags"><li>Classification</li><li>Regression</li><li>Model evaluation</li><li>Project presentation</li></ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="project">
+          <button class="project-head" aria-expanded="false" aria-controls="p3">
+            <span class="project-name">SKU-level Sales Forecasting</span>
+            <span class="project-kind">Time series</span>
+            <span class="project-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" id="p3" role="region">
+            <div class="project-inner">
+              <p>An end-to-end monthly forecasting pipeline for an electricals and FMCG style business, at the level of individual SKU, sales office and channel. It uses rolling-origin evaluation, so every model is judged on how it would have performed in the past, not on one lucky split.</p>
+              <p>It compares a wide field on a realistic synthetic dataset: simple baselines, ETS, ARIMA, Prophet and Theta, intermittent-demand methods like Croston, SBA and TSB, tree-based models, and LSTM and GRU networks.</p>
+              <ul class="tags"><li>Time series</li><li>Prophet</li><li>XGBoost</li><li>LSTM and GRU</li><li>Rolling-origin evaluation</li></ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="project">
+          <button class="project-head" aria-expanded="false" aria-controls="p4">
+            <span class="project-name">Buzzer, a Hindi and Hinglish voice agent</span>
+            <span class="project-kind">Voice AI</span>
+            <span class="project-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" id="p4" role="region">
+            <div class="project-inner">
+              <p>A calling agent for DASHR Tech, a material handling equipment dealer. "Ria", an inside-sales persona, makes outbound lead generation calls: she explains what the company does and captures the lead.</p>
+              <p>The hard parts are the ones that matter in India: switching between Hindi and English mid-sentence, keeping latency low enough to feel like a conversation, and handling Indian accents. It is built on OpenAI's realtime voice API with Exotel for telephony, and an admin console is being added to the company's Next.js site. In active development.</p>
+              <ul class="tags"><li>Voice AI</li><li>OpenAI Realtime</li><li>Exotel</li><li>Next.js</li></ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="project">
+          <button class="project-head" aria-expanded="false" aria-controls="p5">
+            <span class="project-name">DASHR mobile apps and CardEx</span>
+            <span class="project-kind">Mobile</span>
+            <span class="project-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" id="p5" role="region">
+            <div class="project-inner">
+              <p>iOS and Android apps built from the DASHR Tech website using React Native and Expo. One covers the material handling equipment catalogue. The other is CardEx, which scans visiting cards offline in the field and syncs them to a backend that uses Gemini and Apify to turn a card into an enriched lead.</p>
+              <p>I build these with Claude Code, with a workflow of written specs, planning before coding, and quality and security reviews. In active development.</p>
+              <ul class="tags"><li>React Native</li><li>Expo</li><li>Gemini</li><li>Apify</li><li>Claude Code</li></ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="project">
+          <button class="project-head" aria-expanded="false" aria-controls="p6">
+            <span class="project-name">RouteTap, a ticketing app for bus conductors</span>
+            <span class="project-kind">Product design</span>
+            <span class="project-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" id="p6" role="region">
+            <div class="project-inner">
+              <p>A product design project: a mobile app that lets conductors on Indian public buses issue tickets quickly while the bus is moving and crowded. The deliverable is a Figma design with a clickable prototype.</p>
+              <p>It shows how I think about users first, which is a useful habit for anyone who builds models that other people have to rely on.</p>
+              <ul class="tags"><li>Figma</li><li>Prototyping</li><li>User flows</li></ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <h2 class="section-title">Where I've worked.</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Sep 2026 to now</span>
+          <div>
+            <h3>Data Science Intern, Havells India</h3>
+            <p class="where">Noida</p>
+            <p>Analysing data from an electrician loyalty programme, and building next-month sales forecasts with XGBoost from historical data. The forecasts go to the planning team, who use them to decide how much of each product the plants make.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2026</span>
+          <div>
+            <h3>AI Intern, DASHR Material Handling Solutions</h3>
+            <p class="where">Gurgaon</p>
+            <p>AI-driven automation work. I used Claude Code and Codex to build and automate the company website, and I now build its voice agent and mobile apps.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Jan to Jun 2026</span>
+          <div>
+            <h3>Data Analyst Intern, CrackNonTech</h3>
+            <p class="where">Remote</p>
+            <p>Worked on data analysis for the team.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Nov 2024 to Apr 2025</span>
+          <div>
+            <h3>Data Science Intern, Unprep</h3>
+            <p class="where">Remote</p>
+            <p>Worked across teams, including the paid customer support team and the social media content and outreach team.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Summer</span>
+          <div>
+            <h3>Summer Intern, Phoenix Contact India</h3>
+            <p class="where">Faridabad</p>
+            <p>An industrial automation company, and my first look at how a manufacturing business runs.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <h2 class="section-title">What I work with.</h2>
+      <div class="skill-groups">
+        <div>
+          <h3>Machine learning and data</h3>
+          <ul class="tags"><li>Python</li><li>SQL</li><li>scikit-learn</li><li>XGBoost</li><li>Prophet</li><li>ARIMA and ETS</li><li>LSTM and GRU</li><li>Feature engineering</li></ul>
+        </div>
+        <div>
+          <h3>Engineering and MLOps</h3>
+          <ul class="tags"><li>Flask</li><li>Docker</li><li>GitHub Actions</li><li>AWS ECR and EC2</li><li>Config-driven pipelines</li></ul>
+        </div>
+        <div>
+          <h3>AI-assisted building</h3>
+          <ul class="tags"><li>Claude Code</li><li>Codex</li><li>Realtime voice APIs</li><li>React Native and Expo</li><li>Next.js</li></ul>
+        </div>
+        <div>
+          <h3>Product and communication</h3>
+          <ul class="tags"><li>Figma prototyping</li><li>User research</li><li>Presentations</li><li>Cross-team work</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEYOND -->
+    <section class="section beyond">
+      <h2 class="section-title">Beyond the code.</h2>
+      <p class="beyond-text">I run an Instagram page and have built an audience there. It taught me things no course did: how to write for strangers, read audience data, and keep showing up. I keep learning daily, working through data science, machine learning and generative AI playlists and turning them into my own study notebooks.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="contact-title">Let's build something.</h2>
+      <p class="contact-sub">If you have an internship, a project or a question, I'd like to hear from you.</p>
+      <div class="contact-links">
+        <!-- EDIT THESE: replace the placeholder email, LinkedIn and Instagram links with your own. -->
+        <a class="btn btn-primary" href="mailto:your-email@example.com" data-contact="email">your-email@example.com</a>
+        <a class="btn btn-ghost" href="https://github.com/sauravyadav7721" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener" data-contact="linkedin">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/your-handle" target="_blank" rel="noopener" data-contact="instagram">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Saurav Yadav, <span id="year">2026</span></p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
